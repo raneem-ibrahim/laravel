@@ -40,11 +40,11 @@
 
 
 
-  {{-- هد سايد بار --}}
+  {{-- sidebar-}}
   
   @include('layouts.sidebare');
 
-  {{-- end سايدبار --}}
+  {{-- end sidebar --}}
 
   <main class="main-content position-relative border-radius-lg ">
 
