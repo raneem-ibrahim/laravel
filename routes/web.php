@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\RaneemController;
 // use App\Http\Controllers\postController;
 use App\Http\Controllers\StudentController;
+// use App\Http\Controllers\TestController;
+ use App\Http\Controllers\ProfileController;
 
 
 /*
@@ -16,6 +18,9 @@ use App\Http\Controllers\StudentController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+// ...........................................task Route....................................
 // task1
 // Route::get('/', function () {
 //     return view('layouts.layout');
@@ -37,6 +42,8 @@ use App\Http\Controllers\StudentController;
 // Route::get('/welcome/{age}', function ($age) {
 //     return 'You are' . $age . 'years old.';
 // });
+
+
 // //  task4
 // Route::resource('raneem', RaneemController::class);
 
@@ -78,7 +85,7 @@ use App\Http\Controllers\StudentController;
 // });
 
 
-// Route::get('/test', [TestController::class,'firstAction']); 
+// Route::get('/test', [TestController::class,'test']); 
 // Route::get('/hello',[TestController::class , 'secondAction']);
 // Route::get('user/{id?}' ,function($id=null){
 //     return "Hello User $id";
@@ -91,7 +98,9 @@ use App\Http\Controllers\StudentController;
 
 
 
-// task master page
+//........................................ task master page..........................................
+
+
 // Route::get('/', function () {
 //     return view('home');
 // });
@@ -107,4 +116,9 @@ Route::resource('students' , StudentController::class);
 // Route::get('/', function () {
 //          return view('index');
 //     });
+
+// ........................................ORM Relation .....................................................
+  Route::resource('/profile' ,ProfileController::class)
+
+
 ?>
