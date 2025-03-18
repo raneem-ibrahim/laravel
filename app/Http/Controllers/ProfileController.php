@@ -12,7 +12,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-      $profiles = profile::find(7);
+      $profiles =profile::all();
       return view ('profile.index' , compact('profiles'));
     }
 

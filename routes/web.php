@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
 // use App\Http\Controllers\TestController;
  use App\Http\Controllers\ProfileController;
-
+ use App\Http\Controllers\NewuserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -118,7 +118,18 @@ Route::resource('students' , StudentController::class);
 //     });
 
 // ........................................ORM Relation .....................................................
-  Route::resource('/profile' ,ProfileController::class)
+  Route::resource('/profile' ,ProfileController::class);
+  
+  // .........................................task1-1 ORM..........................................
 
+  Route::resource('/task1' , NewuserController::class);
+  // .........................................task1-m ORM..........................................
+
+
+
+  // ........................................middleware..........................................
+  Route::get('/login' ,function(){
+    return view('middle.login');
+  });
 
 ?>
