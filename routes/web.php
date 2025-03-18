@@ -7,6 +7,7 @@ use App\Http\Controllers\StudentController;
 // use App\Http\Controllers\TestController;
  use App\Http\Controllers\ProfileController;
  use App\Http\Controllers\NewuserController;
+ use App\Http\Controllers\coacheController;
 
 /*
 |--------------------------------------------------------------------------
@@ -125,7 +126,7 @@ Route::resource('students' , StudentController::class);
   Route::resource('/task1' , NewuserController::class);
   // .........................................task1-m ORM..........................................
 
-
+  Route::resource('coaches', coacheController::class);
 
   // ........................................middleware..........................................
   Route::get('/login' ,function(){
